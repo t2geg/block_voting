@@ -1,0 +1,165 @@
+.createVoter{
+    width: 95%;
+    margin: 0 auto;
+    margin-block: 2rem;
+    display: grid;
+
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2rem;
+}
+
+.voterInfo{
+    position: absolute;
+    top: 12px;
+    left: 3rem;
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
+    background-color: #f0f0ff;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+    color: #282829;
+    text-align: start;
+
+}
+
+.voterInfo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.voterInfo_paragraph{
+    background-color: #f0f0ff;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+    color: #282829;
+    height: 9rem;
+    padding: 1rem;
+}
+
+.voterInfo_paragraph p{
+    line-height: 1rem;
+}
+
+.voterInfo_paragraph p span{
+    font-size: 12px;
+}
+
+/* ///// SIDE INFO BAR */
+
+.sideInfo{
+    background-color: #f0f0ff;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: #282829;
+}
+
+.sideInfo_box h4{
+    background-color: aliceblue;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+.sideInfo_para{
+    background-color: aliceblue;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.card_box{
+    line-height: 1;
+    border: 1px solid aliceblue;
+    padding: .2rem;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+    border-radius: .3rem;
+}
+
+.image img{
+    width: 100%;
+}
+
+
+/* //////USER LIST */
+.createdVoter_info{
+    background-color: #f0f0ff;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+    color: #282829;
+    padding: 2rem;
+}
+
+
+
+
+.voter{
+    background-color:#f0f0ff;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+    color:#282829;
+    padding: 2rem;
+}
+
+.voter_container_box{
+    text-align: center;
+    border: 1px dotted; /*add color later if needed*/
+    border-radius: 5px;
+}
+
+.voter_container_box p{
+    line-height: .5s;
+}
+
+/* INPUT CONTAINER */
+
+.input_container{
+    padding-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Button{
+    text-align: end;
+}
+
+
+
+
+/* /////// MEDIA QUERY */
+
+@media screen and (max-width: 45em){
+    .createVoter{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .voter{
+        width:100%;
+        padding: 1rem;
+    }
+
+    .input_container{
+        width: 100%;
+    }
+
+    .voterInfo{
+        width: 12rem;
+        height: 12rem;
+        top: 2rem;
+        left: 0rem;
+        cursor: pointer;
+    }
+
+    .voterInfo_paragraph{
+        font-size: 12px;
+        height: 7.5rem;
+
+    }
+}
+
